@@ -121,7 +121,7 @@ function startGenerating() {
     clearInterval(intervalId); // Clear any existing interval
     intervalId = setInterval(() => {
         displayRandomContent();
-        generationInterval = Math.max(minInterval, generationInterval - 300); // Decrease interval by 300ms, but not below the minimum
+        generationInterval = Math.max(minInterval, generationInterval - 600); // Decrease interval by 300ms, but not below the minimum
         clearInterval(intervalId); // Clear existing interval and set new one with updated interval
         intervalId = setInterval(startGenerating, generationInterval);
     }, generationInterval);
@@ -129,7 +129,7 @@ function startGenerating() {
 
 function stopGenerating() {
     clearInterval(intervalId);
-    generationInterval = 3040; // Reset interval to 3040ms when generation stops
+    generationInterval = 40; // Reset interval to 1840ms when generation stops
 }
 
 function toggleGeneration() {
