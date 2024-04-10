@@ -132,7 +132,7 @@ function displayRandomContent() {
 }
 
 function startGenerating() {
-    intervalId = setInterval(displayRandomContent, 5000);
+    intervalId = setInterval(displayRandomContent, 2000);
 }
 
 function stopGenerating() {
