@@ -97,10 +97,8 @@ const texts = [
 
 ]; // Replace with corresponding texts
 
-let intervalId;
-let generating = true;
-let generationInterval = 40; // Initial interval between generations
-const minInterval = 40; // Minimum interval between generations
+let intervalId; // Variable to store interval ID
+let generating = true; // Variable to track if generation is active or not
 
 function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length);
@@ -118,18 +116,11 @@ function displayRandomContent() {
 }
 
 function startGenerating() {
-    clearInterval(intervalId); // Clear any existing interval
-    intervalId = setInterval(() => {
-        displayRandomContent();
-        generationInterval = Math.max(minInterval, generationInterval - 600); // Decrease interval by 300ms, but not below the minimum
-        clearInterval(intervalId); // Clear existing interval and set new one with updated interval
-        intervalId = setInterval(startGenerating, generationInterval);
-    }, generationInterval);
+    intervalId = setInterval(displayRandomContent, 40);
 }
 
 function stopGenerating() {
     clearInterval(intervalId);
-    generationInterval = 40; // Reset interval to 1840ms when generation stops
 }
 
 function toggleGeneration() {
@@ -143,14 +134,14 @@ function toggleGeneration() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    startGenerating();
+    startGenerating(); // Start generating random content when the page loads
 
     document.addEventListener("click", () => {
         toggleGeneration();
     });
 
     document.addEventListener("keydown", (event) => {
-        if (event.key === " ") {
+        if (event.key === " ") { // Check if the pressed key is spacebar
             toggleGeneration();
         }
     });
