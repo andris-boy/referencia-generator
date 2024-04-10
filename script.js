@@ -46,8 +46,6 @@ const images = [
     "pictures/ÁRNY.jpg"
 
 
-
-
 ]; // Replace with actual image filenames  // "pictures/ÁRNY.jpg"
 const texts = [
     "ÁTJÁRÓHÁZ",
@@ -94,8 +92,6 @@ const texts = [
     "JELÁTJÁTSZÓ",
     "ÖRVÉNY",
     "ÁRNY"
-
-
 
 ]; // Replace with corresponding texts
 
