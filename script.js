@@ -116,7 +116,7 @@ function displayRandomContent() {
 }
 
 function startGenerating() {
-    intervalId = setInterval(displayRandomContent, 40);
+    intervalId = setInterval(displayRandomContent, 400);
 }
 
 function stopGenerating() {
