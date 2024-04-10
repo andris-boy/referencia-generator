@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* changed to hidden to avoid unnecessary scrollbars */
+}
+
+#content {
+    position: relative;
+    width: 100vw;
+    /* changed to viewport width */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* centered content vertically */
+}
+
+#image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    /* send image to the background */
+}
+
+#text-container {
+    position: absolute;
+    bottom: 10px;
+    /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#text {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 200px;
+    /* responsive font size */
+    color: white;
+    -webkit-text-stroke: 2px black;
+    /* Black outline */
+}
