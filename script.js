@@ -97,26 +97,44 @@ const texts = [
 
 ]; // Replace with corresponding texts
 
-let intervalId; // Variable to store interval ID
-let generating = true; // Variable to track if generation is active or not
+let intervalId;
+let generating = true;
+let lastSelections = []; // Keep track of last 10 selections
 
 function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length);
 }
 
 function displayRandomContent() {
-    let randomImageIndex = getRandomIndex(images);
-    let randomTextIndex = getRandomIndex(texts);
+    let randomImageIndex;
+    let randomTextIndex;
+
+    do {
+        randomImageIndex = getRandomIndex(images);
+    } while (lastSelections.includes(images[randomImageIndex]));
+
+    do {
+        randomTextIndex = getRandomIndex(texts);
+    } while (lastSelections.includes(texts[randomTextIndex]));
 
     const randomImage = images[randomImageIndex];
     const randomText = texts[randomTextIndex];
+
+    // Add the new selection to the lastSelections array
+    lastSelections.push(randomImage);
+    lastSelections.push(randomText);
+
+    // Ensure lastSelections contains at most 10 elements
+    if (lastSelections.length > 20) {
+        lastSelections = lastSelections.slice(2);
+    }
 
     document.getElementById("image").src = randomImage;
     document.getElementById("text").textContent = randomText;
 }
 
 function startGenerating() {
-    intervalId = setInterval(displayRandomContent, 3400);
+    intervalId = setInterval(displayRandomContent, 4000);
 }
 
 function stopGenerating() {
@@ -134,14 +152,14 @@ function toggleGeneration() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    startGenerating(); // Start generating random content when the page loads
+    startGenerating();
 
     document.addEventListener("click", () => {
         toggleGeneration();
     });
 
     document.addEventListener("keydown", (event) => {
-        if (event.key === " ") { // Check if the pressed key is spacebar
+        if (event.key === " ") {
             toggleGeneration();
         }
     });
