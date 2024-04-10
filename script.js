@@ -81,7 +81,7 @@ const texts = [
     "TÁJ",
     "RÉS",
     "SMINKTÜKÖR",
-    "„A HATALOM GYŰRŰJE”",
+    "A HATALOM GYŰRŰJE",
     "SZELLŐZŐ",
     "GYÁR",
     "MÁGNES",
