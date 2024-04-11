@@ -6,6 +6,10 @@ body {
     /* changed to hidden to avoid unnecessary scrollbars */
 }
 
+#quote {
+    color: beige;
+}
+
 #content {
     position: relative;
     width: 100vw;
