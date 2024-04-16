@@ -31,7 +31,7 @@ const images = [
     "pictures/VETÍTŐ.jpg",
     "pictures/ÜVEGTEST.jpg",
     "pictures/TÁJ.jpg",
-    "pictures/RÉS.jpg",
+    "pictures/RÉS2.jpg",
     "pictures/SMINKTÜKÖR.jpg",
     "pictures/SZELLŐZŐ.jpg",
     "pictures/GYÁR.jpg",
