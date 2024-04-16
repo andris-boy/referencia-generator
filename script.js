@@ -97,6 +97,26 @@ let intervalId;
 let generating = true;
 let lastSelections = []; // Keep track of last 10 selections
 
+// Preload images
+function preloadImages(imageUrls, callback) {
+    let loadedImages = 0;
+    const totalImages = imageUrls.length;
+
+    imageUrls.forEach((imageUrl) => {
+        const img = new Image();
+        img.src = imageUrl;
+        img.onload = () => {
+            loadedImages++;
+            if (loadedImages === totalImages) {
+                callback();
+            }
+        };
+        img.onerror = () => {
+            console.error(`Failed to preload image: ${imageUrl}`);
+        };
+    });
+}
+
 function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length);
 }
@@ -148,6 +168,7 @@ function toggleGeneration() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    displayRandomContent();
     startGenerating();
 
     document.addEventListener("click", () => {
