@@ -5,18 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Optional CSS stylesheet -->
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
 </head>
 
-<body>
-    <div class="container">
-        <blockquote>
-            <p id="quote">Egy tárgy története leírható a tárgyat uraló erők történeteként.</p>
-        </blockquote>
-        <a href="generator.html">
-            <img src="assets/index-button.svg" alt="Generate Button">
-        </a>
-    </div>
+<body onclick="window.location.href='generator.html'">
+    <h2>"Egy tárgy története leírható a tárgyat uraló erők történeteként."</h2>
 </body>
 
 </html>
