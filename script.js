@@ -139,7 +139,16 @@ function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length);
 }
 
-function displayRandomContent() {
+function loadImage(src) {
+    return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.src = src;
+        img.onload = () => resolve(img);
+        img.onerror = (error) => reject(error);
+    });
+}
+
+async function displayRandomContent() {
     let randomImageIndex;
     let randomTextIndex;
 
@@ -151,11 +160,11 @@ function displayRandomContent() {
         randomTextIndex = getRandomIndex(texts);
     } while (lastSelections.includes(texts[randomTextIndex]));
 
-    const randomImage = images[randomImageIndex];
+    const randomImageSrc = images[randomImageIndex];
     const randomText = texts[randomTextIndex];
 
     // Add the new selection to the lastSelections array
-    lastSelections.push(randomImage);
+    lastSelections.push(randomImageSrc);
     lastSelections.push(randomText);
 
     // Ensure lastSelections contains at most 10 elements
@@ -163,9 +172,15 @@ function displayRandomContent() {
         lastSelections = lastSelections.slice(2);
     }
 
-    document.getElementById("image").src = randomImage;
-    document.getElementById("text").textContent = randomText;
+    try {
+        const img = await loadImage(randomImageSrc);
+        document.getElementById("image").src = img.src;
+        document.getElementById("text").textContent = randomText;
+    } catch (error) {
+        console.error(`Failed to load image: ${randomImageSrc}`, error);
+    }
 }
+
 
 function startGenerating() {
     intervalId = setInterval(displayRandomContent, 2000);
