@@ -2,16 +2,20 @@
 const images = [
     "pictures/ÁTJÁRÓHÁZ.jpg",
     "pictures/AURA.png",
+    "pictures/BÉRHÁZ.jpg",
     "pictures/CSAPDA.jpg",
+    "pictures/DUGASZOLÓ ALJZAT.PNG",
     "pictures/EREKLYE.png",
     "pictures/FÉNYFORRÁS.jpg",
     "pictures/FÉREGSZÁLY-100.jpg",
     "pictures/FOTÓ.jpg",
     "pictures/FORRÁS.jpg",
     "pictures/HORIZONT.jpg",
+    "pictures/GRÁDICS.jpg",
     "pictures/KÉP.jpg",
     "pictures/KÖZLEKEDŐEDÉNY.jpg",
     "pictures/KULCSLYUK.jpg",
+    "pictures/KÁTYÚ.jpg",
     "pictures/MENTŐÖV.jpg",
     "pictures/MONSTRANCIA.jpg",
     "pictures/MŰALKOTÁS.jpg",
@@ -20,6 +24,7 @@ const images = [
     "pictures/OLVAZSTÓTÉGELY.jpg",
     "pictures/PARAZITA.jpg",
     "pictures/PERSPEKTÍVA.jpg",
+    "pictures/PERISZKÓP.jpg",
     "pictures/PÓRUS.jpg",
     "pictures/RORSCHACH TEST.jpg",
     "pictures/SALLY-100.jpg",
@@ -31,7 +36,9 @@ const images = [
     "pictures/VETÍTŐ.jpg",
     "pictures/ÜVEGTEST.jpg",
     "pictures/TÁJ.jpg",
+    "pictures/RÉS.jpg",
     "pictures/RÉS2.jpg",
+    "pictures/RONCS.jpg",
     "pictures/SMINKTÜKÖR.jpg",
     "pictures/SZELLŐZŐ.jpg",
     "pictures/GYÁR.jpg",
@@ -42,23 +49,28 @@ const images = [
     "pictures/FOJTOGATÓ.jpg",
     "pictures/JELÁTJÁTSZÓ.jpg",
     "pictures/ÖRVÉNY.jpg",
-    "pictures/ÁRNY.jpg"
+    "pictures/ÁRNY.jpg",
+    "pictures/ISZAPSZÁRÍTÓ.jpg"
 
 
-]; // Replace with actual image filenames  // "pictures/ÁRNY.jpg"
+]; // Replace with actual image filenames  // "pictures/GRÁDICS.jpg"
 const texts = [
     "ÁTJÁRÓHÁZ",
     "AURA",
+    "BÉRHÁZ",
     "CSAPDA",
+    "DUGASZOLÓ ALJZAT",
     "EREKLYE",
     "FÉNYFORRÁS",
     "FÉREGSZÁLY",
     "FOTOGRÁFIA",
     "FORRÁS",
+    "GRÁDICS",
     "HORIZONT",
     "REPRODUKCIÓ",
     "KÖZLEKEDŐEDÉNY",
     "KULCSLYUK",
+    "KÁTYÚ",
     "MENTŐÖV",
     "MONSTRANCIA",
     "MŰALKOTÁS",
@@ -67,6 +79,7 @@ const texts = [
     "OLVASZTÓTÉGELY",
     "PARAZITA",
     "PERSPEKTÍVA",
+    "PERISZKÓP",
     "PÓRUS",
     "RORSCHACH TEST",
     "SALLY",
@@ -79,6 +92,7 @@ const texts = [
     "ÜVEGTEST",
     "TÁJ",
     "RÉS",
+    "RONCS",
     "SMINKTÜKÖR",
     "SZELLŐZŐ",
     "GYÁR",
@@ -89,7 +103,8 @@ const texts = [
     "„FOLYTOGATÓ”",
     "JELÁTJÁTSZÓ",
     "ÖRVÉNY",
-    "ÁRNY"
+    "ÁRNY",
+    "ISZAPSZÁRÍTÓ"
 
 ]; // Replace with corresponding texts
 
