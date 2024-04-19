@@ -50,11 +50,13 @@ const images = [
     "pictures/ÖRVÉNY.jpg",
     "pictures/ÁRNY.jpg",
     "pictures/ISZAPSZÁRÍTÓ.jpg",
-    "pictures/IDEGEN TEST.jpg"
+    "pictures/IDEGEN TEST.jpg",
+    "pictures/FEKETE BÁRÁNY.jpg",
+    "pictures/NAGYÍTÓ.jpg"
 
 
 
-]; // Replace with actual image filenames  // "pictures/MODELL.jpg"
+]; // Replace with actual image filenames  // "pictures/NAGYÍTÓ.jpg"
 const texts = [
     "ÁTJÁRÓHÁZ",
     "AURA",
@@ -105,7 +107,9 @@ const texts = [
     "ÖRVÉNY",
     "ÁRNY",
     "ISZAPSZÁRÍTÓ",
-    "IDEGEN TEST"
+    "IDEGEN TEST",
+    "FEKETE BÁRÁNY",
+    "NAGYÍTÓ"
 
 ]; // Replace with corresponding texts
 
