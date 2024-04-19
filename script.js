@@ -48,15 +48,15 @@ const images = [
     "pictures/FOJTOGATÓ.jpg",
     "pictures/JELÁTJÁTSZÓ.jpg",
     "pictures/ÖRVÉNY.jpg",
-    "pictures/ÁRNY.jpg",
     "pictures/ISZAPSZÁRÍTÓ.jpg",
     "pictures/IDEGEN TEST.jpg",
-    "pictures/FEKETE BÁRÁNY.jpg",
-    "pictures/NAGYÍTÓ.jpg"
+    "pictures/FEKETE BÁRÁNY.png",
+    "pictures/NAGYÍTÓ.jpg",
+    "pictures/INTERFÉSZ.jpg"
 
 
 
-]; // Replace with actual image filenames  // "pictures/NAGYÍTÓ.jpg"
+]; // Replace with actual image filenames  // "pictures/INTERFÉSZ.jpg"
 const texts = [
     "ÁTJÁRÓHÁZ",
     "AURA",
@@ -65,7 +65,7 @@ const texts = [
     "DUGASZOLÓ ALJZAT",
     "EREKLYE",
     "FÉNYFORRÁS",
-    "FÉREGSZÁLY",
+    "FÉREGSZÁJ",
     "FOTOGRÁFIA",
     "FORRÁS",
     "GRÁDICS",
@@ -105,11 +105,11 @@ const texts = [
     "„FOLYTOGATÓ”",
     "JELÁTJÁTSZÓ",
     "ÖRVÉNY",
-    "ÁRNY",
     "ISZAPSZÁRÍTÓ",
     "IDEGEN TEST",
     "FEKETE BÁRÁNY",
-    "NAGYÍTÓ"
+    "NAGYÍTÓ",
+    "INTERFÉSZ"
 
 ]; // Replace with corresponding texts
 
