@@ -51,8 +51,7 @@ const images = [
     "pictures/ÖRVÉNY.jpg",
     "pictures/ÁRNY.jpg",
     "pictures/ISZAPSZÁRÍTÓ.jpg",
-    "pictures/IDEGEN TEST.jpg",
-    "pictures/MODELL.jpg"
+    "pictures/IDEGEN TEST.jpg"
 
 
 
@@ -108,8 +107,7 @@ const texts = [
     "ÖRVÉNY",
     "ÁRNY",
     "ISZAPSZÁRÍTÓ",
-    "IDEGEN TEST",
-    "MODELL"
+    "IDEGEN TEST"
 
 ]; // Replace with corresponding texts
 
