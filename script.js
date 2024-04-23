@@ -51,11 +51,13 @@ const images = [
     "pictures/ISZAPSZÁRÍTÓ.jpg",
     "pictures/IDEGEN TEST.jpg",
     "pictures/NAGYÍTÓ.jpg",
-    "pictures/INTERFÉSZ.jpg"
+    "pictures/INTERFÉSZ.jpg",
+    "pictures/SÜPPEDÉS.jpg",
+    "pictures/TÁRGY.jpg",
+    "pictures/LÁTVÁNYTERV.jpg"
 
 
-
-]; // Replace with actual image filenames  // "pictures/folytogató2.jpg"
+]; // Replace with actual image filenames  // "pictures/LÁTVÁNYTERV.jpg"
 const texts = [
     "ÁTJÁRÓHÁZ",
     "AURA",
@@ -107,7 +109,11 @@ const texts = [
     "ISZAPSZÁRÍTÓ",
     "IDEGEN TEST",
     "NAGYÍTÓ",
-    "INTERFÉSZ"
+    "INTERFÉSZ",
+    "SÜPPEDÉS",
+    "HASZNÁLATI TÁRGY",
+    "LÁTVÁNYTERV"
+
 
 ]; // Replace with corresponding texts
 
