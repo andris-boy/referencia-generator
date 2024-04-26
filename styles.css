@@ -73,10 +73,10 @@ body {
 }
 
 
-@media only screen and (max-heigth:450px) {
+@media only screen and (max-height:450px) {
 
     #text-container {
-        bottom: 5px;
+        bottom: -3rem;
     }
 
 
