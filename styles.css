@@ -76,7 +76,7 @@ body {
 @media only screen and (max-height:450px) {
 
     #text-container {
-        bottom: -3rem;
+        bottom: 0em;
     }
 
 
