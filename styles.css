@@ -6,20 +6,6 @@ body {
     /* changed to hidden to avoid unnecessary scrollbars */
 }
 
-@media only screen and (max-width:900px) {
-    #text {
-        font-size: 10vw !important
-    }
-
-    #content {
-        overflow: hidden
-    }
-
-    #image {
-
-        max-width: 100vw !important
-    }
-}
 
 /*min-height: 100vh */
 
@@ -66,4 +52,22 @@ body {
     color: white;
     -webkit-text-stroke: 2px black;
     /* Black outline */
+}
+
+@media only screen and (max-width:900px) {
+    #text {
+        font-size: 10vw !important
+    }
+
+    #text-container {
+        bottom: 30px;
+    }
+
+    #content {
+        overflow: hidden
+    }
+
+    #image {
+        max-width: 100vw !important
+    }
 }
