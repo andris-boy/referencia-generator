@@ -71,3 +71,14 @@ body {
         max-width: 100vw !important
     }
 }
+
+
+@media only screen and (max-heigth:450px) {
+
+    #text-container {
+        bottom: 5px;
+    }
+
+
+
+}
