@@ -77,13 +77,18 @@ body {
     }
 }
 
-
-@media only screen and (max-height:450px) {
+@media only screen and (max-width:900px) {
 
     #text {
         color: white;
         -webkit-text-stroke: 0px white;
     }
+
+}
+
+
+@media only screen and (max-height:450px) {
+
 
     #text-container {
         bottom: 0em;
