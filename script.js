@@ -143,7 +143,7 @@ function loadImage(src) {
 async function displayRandomContent() {
     let randomImageIndex;
     let randomTextIndex;
-    const backgroundColors = ["#FFC0CB", "#87CEEB", "#90EE90", "#FFD700", "#FFA07A"]; // Add more colors as needed
+    const backgroundColors = ["#9400d", "#87CEEB", "#90EE90", "#FFD700", "#FFA07A", "#FF0000", "0000FF"]; // Add more colors as needed
 
     do {
         randomImageIndex = getRandomIndex(images);
