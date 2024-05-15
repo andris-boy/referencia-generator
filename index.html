@@ -30,7 +30,31 @@
 
     <h2>"Egy dolog története leírható a dolgot uraló erők történetével."</h2>
 
-    <h2> [kattints] </h2>
+    <h2 id="randomColorHeading"> [kattints] </h2>
+
+    <script>
+        // Function to generate random hex color
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // Function to change color randomly
+        function changeColor() {
+            // Get random hex color
+            var randomColor = getRandomColor();
+
+            // Apply the random color to the second h2 element
+            document.getElementById('randomColorHeading').style.color = randomColor;
+        }
+
+        // Change color every 2 seconds
+        setInterval(changeColor, 200);
+    </script>
 
 </body>
 

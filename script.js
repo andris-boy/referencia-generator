@@ -35,7 +35,6 @@ const images = [
     "pictures/ÜVEGTEST.jpg",
     "pictures/TÁJ.jpg",
     "pictures/RÉS.jpg",
-    "pictures/RÉS2.jpg",
     "pictures/RONCS.jpg",
     "pictures/SMINKTÜKÖR.jpg",
     "pictures/SZELLŐZŐ.jpg",
@@ -50,8 +49,6 @@ const images = [
     "pictures/ISZAPSZÁRÍTÓ.jpg",
     "pictures/IDEGEN TEST.jpg",
     "pictures/NAGYÍTÓ.jpg",
-    "pictures/INTERFÉSZ.jpg",
-    "pictures/SÜPPEDÉS.jpg",
     "pictures/TÁRGY.jpg",
     "pictures/LÁTVÁNYTERV.jpg"
 
@@ -107,8 +104,6 @@ const texts = [
     "ISZAPSZÁRÍTÓ",
     "IDEGEN TEST",
     "NAGYÍTÓ",
-    "INTERFÉSZ",
-    "SÜPPEDÉS",
     "HASZNÁLATI TÁRGY",
     "LÁTVÁNYTERV"
 
