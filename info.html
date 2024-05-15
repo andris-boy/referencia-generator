@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 28px;
+        }
+    </style>
+</head>
+
+<body onclick="window.location.href='generator.html'">
+
+    <h2>“Egy dolog története leírható az őt uraló erők történetével, illetve azon erők együttes létezésével, melyek az
+        uralomért
+        küzdenek. Ugyanaz a tárgy, ugyanaz a fenomén megváltozik az érzékek számára, azon erő függvényében mely
+        kisajátítja.“ /Gilles Deleuze - Nietzsche és a filozófia</h2>
+
+    <h2> A referencia-generátor Sugár János azonos című műalkotásának újragondolásaként született meg. A program 50
+        képet és a hozzájuk tartozó 50 rövid leírást kever össze és rendel egymáshoz véletlenszerűen. </h2>
+
+    <h2> A generálódás bármikor megállítható és újraindítható a [space] billantyű lenyomásával. </h2>
+
+    <h2 id="randomColorHeading"> [kattints] </h2>
+
+    <script>
+        // Function to generate random hex color
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // Function to change color randomly
+        function changeColor() {
+            // Get random hex color
+            var randomColor = getRandomColor();
+
+            // Apply the random color to the second h2 element
+            document.getElementById('randomColorHeading').style.color = randomColor;
+        }
+
+        // Change color every 2 seconds
+        setInterval(changeColor, 200);
+    </script>
+
+</body>
+
+</html>

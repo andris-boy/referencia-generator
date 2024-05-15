@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
-<body>
+<body onclick="redirectToInfo()">
     <div id="content">
         <img id="image" src="" alt="Random Image">
         <div id="text-container">
@@ -16,6 +16,11 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script>
+        function redirectToInfo() {
+            window.location.href = "info.html";
+        }
+    </script>
 </body>
 
 </html>

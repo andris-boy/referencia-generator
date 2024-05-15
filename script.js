@@ -200,10 +200,6 @@ document.addEventListener("DOMContentLoaded", () => {
     displayRandomContent();
     startGenerating();
 
-    document.addEventListener("click", () => {
-        toggleGeneration();
-    });
-
     document.addEventListener("keydown", (event) => {
         if (event.key === " ") {
             toggleGeneration();
