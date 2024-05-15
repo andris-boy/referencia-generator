@@ -62,8 +62,6 @@ body {
 @media only screen and (max-width:900px) {
     #text {
         font-size: 10vw !important;
-        color: white;
-        -webkit-text-stroke: 0px white;
     }
 
     #text-container {
@@ -81,6 +79,11 @@ body {
 
 
 @media only screen and (max-height:450px) {
+
+    #text {
+        color: white;
+        -webkit-text-stroke: 0px white;
+    }
 
     #text-container {
         bottom: 0em;
