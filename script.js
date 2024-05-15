@@ -155,6 +155,7 @@ function loadImage(src) {
 async function displayRandomContent() {
     let randomImageIndex;
     let randomTextIndex;
+    const backgroundColors = ["#FFC0CB", "#87CEEB", "#90EE90", "#FFD700", "#FFA07A"]; // Add more colors as needed
 
     do {
         randomImageIndex = getRandomIndex(images);
@@ -166,6 +167,8 @@ async function displayRandomContent() {
 
     const randomImageSrc = images[randomImageIndex];
     const randomText = texts[randomTextIndex];
+    const randomColorIndex = getRandomIndex(backgroundColors);
+    const randomBackgroundColor = backgroundColors[randomColorIndex];
 
     // Add the new selection to the lastSelections array
     lastSelections.push(randomImageSrc);
@@ -180,6 +183,7 @@ async function displayRandomContent() {
         const img = await loadImage(randomImageSrc);
         document.getElementById("image").src = img.src;
         document.getElementById("text").textContent = randomText;
+        document.getElementById("content").style.backgroundColor = randomBackgroundColor; // Change background color
     } catch (error) {
         console.error(`Failed to load image: ${randomImageSrc}`, error);
     }

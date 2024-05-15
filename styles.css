@@ -14,16 +14,21 @@ body {
     color: beige;
 }
 
+
 #content {
     position: relative;
     width: 100vw;
-    /* changed to viewport width */
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* centered content vertically */
+    background-color: inherit;
+    /* Set background color here */
+    z-index: -1;
+    /* Adjust the z-index to send it behind images */
 }
+
+
 
 #image {
     position: absolute;
