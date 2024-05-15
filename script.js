@@ -10,7 +10,6 @@ const images = [
     "pictures/FÉREGSZÁLY-100.jpg",
     "pictures/FOTÓ.jpg",
     "pictures/FORRÁS.jpg",
-    "pictures/HORIZONT.jpg",
     "pictures/KÉP.jpg",
     "pictures/KÖZLEKEDŐEDÉNY.jpg",
     "pictures/KULCSLYUK.jpg",
@@ -48,8 +47,6 @@ const images = [
     "pictures/IDEGEN TEST.jpg",
     "pictures/NAGYÍTÓ.jpg",
     "pictures/TÁRGY.jpg",
-    "pictures/LÁTVÁNYTERV.jpg"
-
 
 ]; // Replace with actual image filenames  // "pictures/LÁTVÁNYTERV.jpg"
 const texts = [
@@ -63,7 +60,6 @@ const texts = [
     "FÉREGSZÁJ",
     "FOTOGRÁFIA",
     "FORRÁS",
-    "HORIZONT",
     "REPRODUKCIÓ",
     "KÖZLEKEDŐEDÉNY",
     "KULCSLYUK",
@@ -101,7 +97,6 @@ const texts = [
     "IDEGEN TEST",
     "NAGYÍTÓ",
     "HASZNÁLATI TÁRGY",
-    "LÁTVÁNYTERV"
 
 
 ]; // Replace with corresponding texts
