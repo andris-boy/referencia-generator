@@ -91,7 +91,7 @@ const texts = [
     "MÁGNES",
     "JÁTÉK",
     "ÁTRIUM",
-    "„FOLYTOGATÓ”",
+    "„FOJTOGATÓ”",
     "JELÁTJÁTSZÓ",
     "ÖRVÉNY",
     "ISZAPSZÁRÍTÓ",
