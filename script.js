@@ -179,7 +179,7 @@ async function displayRandomContent() {
 
 
 function startGenerating() {
-    intervalId = setInterval(displayRandomContent, 2000);
+    intervalId = setInterval(displayRandomContent, 3500);
 }
 
 function stopGenerating() {
